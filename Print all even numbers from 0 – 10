@@ -1,0 +1,32 @@
+// Print all even numbers from 0 – 10
+//you need two empty array objects. 
+//then a way to traverse elements until 10
+// then a way to store or PUSH the elements into an empty array
+//then a method  to separate the elements in array1 into array2(evenArray). In JavaScript, you can use the filter() method to create a new array that contains only the elements of an existing array that satisfy a certain condition.
+/*...Here's what each part of the code means:
+
+num: This is the parameter of the function. It represents a single number that will be passed to the function as an argument.
+=>: This is the arrow function syntax. It separates the function parameter(s) from the function body.
+num % 2: This is the modulo operator %, which calculates the remainder of dividing num by 2. If num is an even number, the result will be 0; if it's an odd number, the result will be 1.
+===: This is the strict equality operator. It compares the value on the left (num % 2) to the value on the right (0) and returns true if they are equal, false otherwise.
+0: This is the value that num % 2 is being compared to. It represents an even number, since the remainder of dividing any even number by 2 is always 0.
+The entire expression num % 2 === 0 is a boolean expression that evaluates to true if num is an even number and false if it's an odd number.*/
+
+
+const countArray = []; //empty array 1 
+
+for (let i = 1; i <= 10; i++) {//traverses array
+  countArray.push(i); //pushes the elements and stores them in the array
+}
+let evenNumbers= countArray.filter(num => num % 2 === 0); //this is literally says. inorder for array element to be true it must be divided by 2 and equal 0. 
+
+let countEvenNumbers= evenNumbers;
+
+console.log(evenNumbers); //finally print it to console
+
+//now you need a filter out the even numbers using a method
+
+
+
+
+
